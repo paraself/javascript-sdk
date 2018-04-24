@@ -495,7 +495,7 @@ export class Query extends BaseObject {
   near(key: string, point: GeoPoint): Query;
   notContainedIn(key: string, values: any[]): Query;
   notEqualTo(key: string, value: any): Query;
-  select(...keys: string[]): Query;
+  select(keys: string[]): Query;
   skip(n: number): Query;
   startsWith(key: string, prefix: string): Query;
   withinGeoBox(key: string, southwest: GeoPoint, northeast: GeoPoint): Query;
